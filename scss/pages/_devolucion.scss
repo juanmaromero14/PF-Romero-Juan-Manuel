@@ -1,3 +1,61 @@
-#devolucion {
-    background-color: aqua;
+// pagina 3
+#devolucion{
+background-color: #ebe8e8;
+background-image: linear-gradient(to bottom,
+rgba(0, 0, 0, 0.05),
+#ebe8e8 10%);
+height: auto;
+    h2{
+    margin-top: 0;
+    font-size: 3.8em;
+    color: #000;
+    padding: 50px;
+    font-weight: bold;
+    text-align: center;
 }
+.listaimg{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 0px 80px;
+    padding-bottom: 100px ;
+
+ul{
+    list-style: none;
+    animation: animacion1;
+    animation-duration: 1.5s;
+    li{
+        font-size: 2em;
+        padding: 20px;
+    }
+}
+img{
+    height: 380px;
+    width: 410px;
+    animation: animacion3;
+    animation-duration: 7.5s;
+}
+}
+}
+
+@keyframes animacion1 {
+    0% {
+      transform: translate(-250px);
+    }
+    100% {
+      transform: translate(0px);
+    }
+}
+@keyframes animacion3 {
+    0% {
+        transform: translate(550px);
+      }
+      10%{transform: rotateZ(-5deg);
+      }
+      35%{
+        transform:rotateZ(0deg)
+      }
+      100% {
+          transform: translate(0px);
+      }
+  }
