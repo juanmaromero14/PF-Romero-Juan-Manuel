@@ -1,26 +1,16 @@
 /* Footer */
 footer {
-  color: whitesmoke;
-  background-color: #454546;
-  div {
+  color: $light;
+  background-color: $secondary;
+  .grid__layout {
     display: grid;
-    background-color: #454546;
+    background-color: $secondary;
     padding: 2px;
     grid-template-columns: auto auto auto auto;
     div {
-      background-color: #454546;
+      background-color: $secondary;
       justify-content: center;
       align-items: center;
-      img {
-        width: 250px;
-        height: 100px;
-        margin-left: 50px;
-        margin-top: 10px;
-      }
-      iframe {
-        margin-top: 10px;
-        margin-left: 50px;
-      }
       h4 {
         text-align: center;
         margin-top: 20px;
@@ -31,61 +21,71 @@ footer {
         margin: 20px;
         display: block;
         text-align: justify;
+
         a {
-          color: white;
+          color: $light;
         }
+
         li {
           padding: 5px;
         }
       }
+      img {
+        width: 250px;
+        height: 100px;
+        margin-left: 50px;
+        margin-top: 10px;
+      }
+
+      iframe {
+        margin-top: 10px;
+        margin-left: 50px;
+      }
     }
   }
-  div {
-    p {
-      text-align: end;
-    }
+  .copy {
+    text-align: end;
   }
 }
+
 @media (max-width: 1300px) {
   /* footer */
-footer {
-    div {
+  footer {
+    .grid__layout {
       display: flex;
       flex-wrap: wrap;
       div {
         justify-content: center;
         align-items: center;
-        img {
-          margin: 10px 30px;
-          width: 180px;
-          height: 120px;
-        }
-        iframe {
-          margin: 10px 30px;
-          width: 180px;
-          height: 120px;
-          justify-content: center;
-        }
-        h4 {
-          text-align: center;
-          font-size: 1.2em;
-          margin-top: 20px;
-        }
-        ul {
-          margin: 10px 10px;
-          display: block;
-          text-align: justify;
-          li {
-            padding: 3px;
-            font-size: 0.9em;
-          }
+      }
+      img {
+        margin: 10px 30px;
+        width: 180px;
+        height: 120px;
+      }
+      iframe {
+        margin: 10px 30px;
+        width: 180px;
+        height: 120px;
+        justify-content: center;
+      }
+      h4 {
+        text-align: center;
+        font-size: 1.2em;
+        margin-top: 20px;
+      }
+      ul {
+        margin: 10px 10px;
+        display: block;
+        text-align: justify;
+        li {
+          padding: 3px;
+          font-size: 0.9em;
         }
       }
     }
-    div {
-        p {
-          text-align: end;
-        }
-      }
-}
+  }
+  .copy {
+    text-align: end;
+  }
 }

@@ -1,0 +1,7 @@
+@each $name, $size, $fw in $title{
+    .title-#{$name}{
+        font-size: $size;
+        font-weight: $fw;
+    }
+}
+

@@ -1,13 +1,14 @@
-// Include any default variable overrides here (though functions won't be available)
+@import "./complements/variables";
+
 @import "../node_modules/bootstrap/scss/bootstrap";
 // Then add additional custom code here
 
-@import  "./components/header";
+@import "./complements/mixins";
+@import "./components/header";
 @import "./components/footer";
 @import "./pages/index";
 @import "./pages/productos";
 @import "./pages/devolucion";
-@import "./pages/contacto"
-
-
-
+@import "./pages/contacto";
+@import "./pages/novedades";
+@import "./complements/bucles"
